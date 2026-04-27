@@ -371,6 +371,14 @@ a {
   line-height: 1.2;
 }
 
+.specialist-name {
+  margin: 0 0 0.65rem;
+  color: var(--primary-deep);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
 .specialist-grid p,
 .specialist-list li {
   color: var(--muted);
@@ -507,6 +515,12 @@ a {
 .contact-panel h2 {
   margin: 0;
   max-width: 18ch;
+}
+
+.contact-copy {
+  margin: 0.45rem 0 0;
+  max-width: 42ch;
+  line-height: 1.7;
 }
 
 .contact-panel .button-secondary {
