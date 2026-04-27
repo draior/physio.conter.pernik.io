@@ -337,6 +337,100 @@ a {
   border-radius: var(--radius-lg);
 }
 
+.specialist-card {
+  position: relative;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(238, 248, 247, 0.9));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.specialist-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(90, 175, 195, 0.12);
+  color: var(--primary-deep);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.specialist-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.2rem;
+}
+
+.specialist-grid h3 {
+  margin: 0 0 0.8rem;
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.specialist-grid p,
+.specialist-list li {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.specialist-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+}
+
+.gallery-card {
+  overflow: hidden;
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.gallery-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.gallery-card figcaption {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.gallery-card figcaption strong {
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.gallery-card figcaption span {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.gallery-card-large {
+  grid-row: span 2;
+}
+
+.gallery-card-wide {
+  grid-column: 2;
+}
+
 .service-card span {
   display: inline-flex;
   margin-bottom: 1rem;
@@ -435,6 +529,8 @@ a {
 @media (max-width: 960px) {
   .hero-grid,
   .intro-grid,
+  .specialist-grid,
+  .gallery-grid,
   .service-grid,
   .timeline,
   .equipment-grid,
@@ -457,6 +553,12 @@ a {
   .section-heading h2,
   .contact-panel h2 {
     max-width: none;
+  }
+
+  .gallery-card-large,
+  .gallery-card-wide {
+    grid-row: auto;
+    grid-column: auto;
   }
 }
 
