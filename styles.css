@@ -99,8 +99,27 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.8rem;
   font-weight: 800;
+}
+
+.brand-text {
+  font-size: 1rem;
+}
+
+.brand-phone {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(74, 157, 179, 0.16), rgba(124, 195, 145, 0.2));
+  border: 1px solid rgba(74, 157, 179, 0.18);
+  color: var(--primary-deep);
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 20px rgba(74, 157, 179, 0.12);
 }
 
 .brand-mark {
