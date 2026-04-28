@@ -505,29 +505,6 @@ a {
   margin: 1.2rem 0 1.4rem;
 }
 
-.visit-counter {
-  display: grid;
-  gap: 0.35rem;
-  padding: 1rem 1.1rem;
-  border-radius: var(--radius-md);
-  background: linear-gradient(135deg, rgba(74, 157, 179, 0.08), rgba(124, 195, 145, 0.14));
-  border: 1px solid rgba(74, 157, 179, 0.12);
-}
-
-.visit-counter span {
-  color: var(--muted);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.visit-counter strong {
-  color: var(--primary-deep);
-  font-size: 2rem;
-  line-height: 1;
-}
-
 .map-card iframe {
   display: block;
   width: 100%;
@@ -623,6 +600,24 @@ a {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.24);
   color: white;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  padding: 0.95rem 1.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer strong {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 .fade-in {
