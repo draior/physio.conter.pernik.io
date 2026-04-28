@@ -458,6 +458,83 @@ a {
   grid-column: 2;
 }
 
+.location-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+}
+
+.location-card,
+.map-card {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.location-card {
+  padding: 1.5rem;
+}
+
+.location-card h3 {
+  margin: 0 0 0.75rem;
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+}
+
+.location-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.location-note {
+  margin: 0 0 1rem;
+}
+
+.location-note a {
+  color: var(--primary-deep);
+  font-weight: 800;
+}
+
+.location-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.2rem 0 1.4rem;
+}
+
+.visit-counter {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(74, 157, 179, 0.08), rgba(124, 195, 145, 0.14));
+  border: 1px solid rgba(74, 157, 179, 0.12);
+}
+
+.visit-counter span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.visit-counter strong {
+  color: var(--primary-deep);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.map-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+}
+
 .service-card span {
   display: inline-flex;
   margin-bottom: 1rem;
@@ -564,6 +641,7 @@ a {
   .intro-grid,
   .specialist-grid,
   .gallery-grid,
+  .location-grid,
   .service-grid,
   .timeline,
   .equipment-grid,
