@@ -91,14 +91,16 @@ a {
   gap: 1rem;
   padding: 1rem 1.2rem;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 248, 0.82)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 248, 0.8)),
     url("./assets/logo-physio-center-pernik-transparent.png?v=4");
   background-repeat: no-repeat, no-repeat;
-  background-position: center, left -2.4rem center;
-  background-size: auto, 13rem auto;
+  background-position: center, center center;
+  background-size: auto, 20rem auto;
   border: 1px solid var(--line);
   border-radius: 999px;
-  box-shadow: 0 10px 30px rgba(63, 112, 121, 0.08);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45),
+    0 10px 30px rgba(63, 112, 121, 0.08);
 }
 
 .brand {
@@ -108,6 +110,8 @@ a {
   gap: 0.8rem;
   min-width: 0;
   font-weight: 800;
+  position: relative;
+  z-index: 1;
 }
 
 .brand-logo {
@@ -153,6 +157,8 @@ a {
   gap: 1.1rem;
   color: var(--muted);
   font-weight: 600;
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -546,11 +552,11 @@ a {
 .map-card {
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.93), rgba(239, 248, 246, 0.9)),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.83), rgba(239, 248, 246, 0.72)),
     url("./assets/logo-physio-center-pernik-transparent.png?v=4");
   background-repeat: no-repeat, no-repeat;
-  background-position: center, right -2.5rem bottom -1.2rem;
-  background-size: auto, 14rem auto;
+  background-position: center, center 66%;
+  background-size: auto, 16rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -657,7 +663,12 @@ a {
   grid-template-columns: 1.2fr auto;
   align-items: center;
   padding: 1.5rem;
-  background: linear-gradient(135deg, rgba(46, 108, 128, 0.96), rgba(102, 175, 146, 0.92));
+  background:
+    linear-gradient(135deg, rgba(46, 108, 128, 0.88), rgba(102, 175, 146, 0.8)),
+    url("./assets/logo-physio-center-pernik-transparent.png?v=4");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center center;
+  background-size: auto, 18rem auto;
   color: white;
   border-radius: var(--radius-xl);
   box-shadow: 0 30px 70px rgba(42, 97, 113, 0.28);
@@ -733,8 +744,8 @@ a {
     border-radius: 28px;
     flex-direction: column;
     align-items: stretch;
-    background-position: center, left -1.2rem top -0.4rem;
-    background-size: auto, 10rem auto;
+    background-position: center, center center;
+    background-size: auto, 15rem auto;
   }
 
   .brand {
@@ -767,8 +778,13 @@ a {
 
   .location-card,
   .map-card {
-    background-position: center, right -2rem bottom -0.5rem;
-    background-size: auto, 10rem auto;
+    background-position: center, center 68%;
+    background-size: auto, 12rem auto;
+  }
+
+  .contact-panel {
+    background-position: center, center center;
+    background-size: auto, 13rem auto;
   }
 }
 
@@ -781,16 +797,12 @@ a {
   .topbar {
     padding: 0.9rem 0.85rem;
     gap: 0.85rem;
-    background-position: center, left -1.4rem top -0.2rem;
-    background-size: auto, 8.4rem auto;
+    background-position: center, center center;
+    background-size: auto, 12rem auto;
   }
 
   .brand {
     gap: 0.65rem;
-  }
-
-  .brand-logo {
-    width: min(56vw, 9rem);
   }
 
   .brand-text,
@@ -820,8 +832,13 @@ a {
 
   .location-card,
   .map-card {
-    background-position: center, right -1.8rem bottom -0.35rem;
-    background-size: auto, 8.5rem auto;
+    background-position: center, center 70%;
+    background-size: auto, 10.25rem auto;
+  }
+
+  .contact-panel {
+    background-position: center, center center;
+    background-size: auto, 11rem auto;
   }
 
   .specialist-photo-shell {
