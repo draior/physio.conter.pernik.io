@@ -90,7 +90,12 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.2rem;
-  background: rgba(255, 255, 255, 0.72);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 248, 0.82)),
+    url("./assets/logo-physio-center-pernik-transparent.png?v=4");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, left -2.4rem center;
+  background-size: auto, 13rem auto;
   border: 1px solid var(--line);
   border-radius: 999px;
   box-shadow: 0 10px 30px rgba(63, 112, 121, 0.08);
@@ -111,6 +116,7 @@ a {
   max-width: 100%;
   flex: 0 0 auto;
   object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(63, 112, 121, 0.14));
 }
 
 .brand-text {
@@ -154,8 +160,17 @@ a {
 }
 
 .hero-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
   margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.12));
+  box-shadow:
+    inset 0 0 0 1px rgba(90, 175, 195, 0.08),
+    0 14px 34px rgba(63, 112, 121, 0.08);
 }
 
 .hero-logo {
@@ -403,8 +418,47 @@ a {
 
 .specialist-grid {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 0.72fr 1.15fr 1fr;
   gap: 1.2rem;
+}
+
+.specialist-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialist-photo-shell {
+  position: relative;
+  width: min(100%, 260px);
+  aspect-ratio: 1;
+  padding: 0.85rem;
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(90, 175, 195, 0.22), rgba(140, 201, 143, 0.18)),
+    rgba(255, 255, 255, 0.88);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.8),
+    0 18px 38px rgba(63, 112, 121, 0.16);
+}
+
+.specialist-photo-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(90, 175, 195, 0.18);
+  pointer-events: none;
+}
+
+.specialist-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center 22%;
+  box-shadow: 0 16px 28px rgba(35, 84, 96, 0.14);
 }
 
 .specialist-grid h3 {
@@ -491,7 +545,12 @@ a {
 .location-card,
 .map-card {
   overflow: hidden;
-  background: var(--surface);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.93), rgba(239, 248, 246, 0.9)),
+    url("./assets/logo-physio-center-pernik-transparent.png?v=4");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right -2.5rem bottom -1.2rem;
+  background-size: auto, 14rem auto;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
@@ -534,6 +593,7 @@ a {
   width: 100%;
   min-height: 420px;
   border: 0;
+  backdrop-filter: blur(2px);
 }
 
 .service-card span {
@@ -673,6 +733,8 @@ a {
     border-radius: 28px;
     flex-direction: column;
     align-items: stretch;
+    background-position: center, left -1.2rem top -0.4rem;
+    background-size: auto, 10rem auto;
   }
 
   .brand {
@@ -697,6 +759,17 @@ a {
     grid-row: auto;
     grid-column: auto;
   }
+
+  .specialist-profile {
+    order: -1;
+    margin-bottom: 0.3rem;
+  }
+
+  .location-card,
+  .map-card {
+    background-position: center, right -2rem bottom -0.5rem;
+    background-size: auto, 10rem auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -708,6 +781,8 @@ a {
   .topbar {
     padding: 0.9rem 0.85rem;
     gap: 0.85rem;
+    background-position: center, left -1.4rem top -0.2rem;
+    background-size: auto, 8.4rem auto;
   }
 
   .brand {
@@ -743,10 +818,22 @@ a {
     padding-top: 1.6rem;
   }
 
+  .location-card,
+  .map-card {
+    background-position: center, right -1.8rem bottom -0.35rem;
+    background-size: auto, 8.5rem auto;
+  }
+
+  .specialist-photo-shell {
+    width: min(72vw, 240px);
+    padding: 0.7rem;
+  }
+
   .hero-logo-wrap {
     display: flex;
     justify-content: center;
     margin-bottom: 0.85rem;
+    padding: 0.55rem 0.7rem;
   }
 
   .hero-logo {
